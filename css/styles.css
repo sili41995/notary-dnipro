@@ -192,3 +192,44 @@ button {
   text-align: center;
   color: #741b47;
 }
+
+.contact-information {
+  padding-bottom: 128px;
+}
+
+.contact-information-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.map-link {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+
+.map-link:hover,
+.map-link:focus {
+  color: #741b47;
+}
+
+.qr-code {
+  width: 450px;
+  height: 100%;
+}
+
+.footer {
+  border-top: 1px solid grey;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.footer-address {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  font-style: normal;
+}

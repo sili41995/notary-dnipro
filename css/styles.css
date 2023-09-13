@@ -1,5 +1,5 @@
 :root {
-  --grad: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
+  --grad: linear-gradient(rgba(25, 28, 38, 0.4), rgba(25, 28, 38, 0.4));
 }
 
 @font-face {
@@ -74,19 +74,24 @@ button {
 
 .main-title {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 26px;
   color: white;
+}
+
+.section {
+  display: inline-block;
+  min-width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .hero {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: var(--grad), url('../images/hero-bg.jpg');
+  background-image: var(--grad), url('../images/hero/hero-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: inline-block;
-  min-width: 100%;
 }
 
 .text-wrap {
@@ -97,22 +102,21 @@ button {
 
 .title {
   font-weight: 400;
-  font-size: 64px;
+  font-size: 84px;
   text-align: center;
   color: white;
+  line-height: 1.1;
 }
 
 .address {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 20px;
   text-align: center;
   color: white;
 }
 
 .schedule {
   background-color: #8c2298;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .schedule-wrap {
@@ -134,11 +138,57 @@ button {
 
 .schedule-subtitle {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
 }
 
 .schedule-text {
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
+}
+
+.services {
+}
+
+.services-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.services-list-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.services-img-wrap {
+}
+
+.services-img {
+  object-fit: cover;
+  height: 375px;
+}
+
+.services-text-wrap {
+  padding: 16px;
+}
+
+.services-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #741b47;
+}
+
+.services-subtitle:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.services-subtitle:last-child {
+  margin-top: 16px;
+}
+
+.services-text {
+  font-size: 20px;
+  text-align: center;
+  color: #741b47;
 }

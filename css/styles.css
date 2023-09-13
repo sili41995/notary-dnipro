@@ -1,0 +1,108 @@
+:root {
+  --grad: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: local('Lora'), local('Lora'),
+    url('../fonts/Lora-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: local('Lora'), local('Lora'),
+    url('../fonts/Lora-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.header-none {
+  position: fixed;
+  transform: scale(0);
+}
+
+body {
+  font-family: 'Lora', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: black;
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.main-title {
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+}
+
+.hero {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: var(--grad), url('../images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.text-wrap {
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 64px;
+  text-align: center;
+  color: white;
+}
+
+.address {
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}

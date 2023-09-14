@@ -57,8 +57,6 @@ button {
 }
 
 .container {
-  position: relative;
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
@@ -86,7 +84,7 @@ button {
 }
 
 .hero {
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 60px;
   background-image: var(--grad), url('../images/hero/hero-bg.jpg');
   background-repeat: no-repeat;
@@ -95,14 +93,14 @@ button {
 }
 
 .text-wrap {
-  width: 550px;
+  max-width: 550px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .title {
   font-weight: 400;
-  font-size: 84px;
+  font-size: 40px;
   text-align: center;
   color: white;
   line-height: 1.1;
@@ -110,7 +108,7 @@ button {
 
 .address {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   color: white;
 }
@@ -121,11 +119,12 @@ button {
 
 .schedule-wrap {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 }
 
 .schedule-img {
-  width: 400px;
+  max-width: 400px;
 }
 
 .schedule-text-wrap {
@@ -143,24 +142,15 @@ button {
 }
 
 .schedule-text {
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
-}
-
-.services {
 }
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   list-style: none;
-}
-
-.services-list-item {
-  flex-basis: calc((100% - 40px) / 3);
-}
-
-.services-img-wrap {
 }
 
 .services-img {
@@ -194,12 +184,12 @@ button {
 }
 
 .contact-information {
-  padding-bottom: 128px;
+  padding-bottom: 32px;
 }
 
-.contact-information-wrap {
-  display: flex;
-  justify-content: space-between;
+.map {
+  width: 100%;
+  height: 450px;
 }
 
 .map-link {
@@ -216,11 +206,6 @@ button {
   color: #741b47;
 }
 
-.qr-code {
-  width: 450px;
-  height: 100%;
-}
-
 .footer {
   border-top: 1px solid grey;
   padding-top: 32px;
@@ -231,7 +216,13 @@ button {
 
 .footer-address {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   font-style: normal;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 428px;
+  }
 }

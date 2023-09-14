@@ -86,7 +86,7 @@ button {
 .hero {
   padding-top: 100px;
   padding-bottom: 60px;
-  background-image: var(--grad), url('../images/hero/hero-bg.jpg');
+  background-image: var(--grad), url('../images/hero/hero-bg.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
